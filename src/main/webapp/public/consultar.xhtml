@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:composition template="/layout.xhtml">
+        <ui:define name="conteudo">
+            <h:form>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="page-header">
+                                <h1>Documentos</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Consultar</a></li>
+                                <li><a href="#">Cadastrar</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tipos
+                                        <span class="caret"></span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Listar Tipos de Documento</a></li>
+                                            <li><a href="#">Gerenciar Tipos de Documento</a></li>
+                                            <li><a href="#">Relacionar Documento a Tipos de Documento</a></li>
+                                        </ul>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </nav>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Pesquisar Documento</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <input type="search" id="search" value="" class="form-control" placeholder="Pesquisar..."></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <table class="table" id="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nº Documento</th>
+                                        <th>Tipo Documento</th>
+                                        <th>Descrição do Documento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>DCC001</td>
+                                        <td>Declaração</td>
+                                        <td>Declaração de Compra</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DDV001</td>
+                                        <td>Declaração</td>
+                                        <td>Declaração de Venda</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DDV002</td>
+                                        <td>Declaração</td>
+                                        <td>Declaração de venda</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr></hr>
+                        </div>
+                    </div>
+
+                </div>
+                <script src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+</html>

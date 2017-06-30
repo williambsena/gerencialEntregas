@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title><ui:insert name="title">Controle Licitação</ui:insert></title>
+        <h:outputStylesheet name="css/bootstrap.min.css" />
+        <h:outputScript name="js/jquery.min.js" />
+        <h:outputScript name="js/bootstrap.min.js"/> 
+        <h:outputStylesheet name="css/controleLicitacao.css"/>
+
+    </h:head>
+    <h:body>
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div id="navbar" class="collapse navbar-collapse">
+                    <h:form id="linksFrm">
+                        <ul class="nav navbar-nav">
+                            <li><h:commandLink action="/index.xhtml">Home</h:commandLink></li>
+                            <li><h:commandLink action="/public/licitacoes.xhtml">Licitação</h:commandLink></li>
+                            <li><h:commandLink action="/public/consultar.xhtml">Documentos</h:commandLink></li>
+                            <li><h:commandLink action="/public/about.xhtml">Sobre</h:commandLink></li>
+                            <li><h:commandLink action="/public/contact.xhtml">Contato</h:commandLink></li>
+                        </ul>
+                    </h:form>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <h:form id="formulario">
+                <ui:insert name="conteudo" />
+            </h:form>
+        </div><!-- /.container -->
+    </h:body>
+</html>
+
